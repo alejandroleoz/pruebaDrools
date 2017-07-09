@@ -1,0 +1,10 @@
+package utn.dds.pruebaDrools
+
+import utn.dds.pruebaDrools.Persona;
+
+rule "Mayor de edad"
+    when
+        $i : Persona(edad >= 18)
+    then
+        $i.setMayor(true);
+end
